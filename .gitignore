@@ -1,0 +1,139 @@
+# ================================
+
+# Film / 3D Animation DCC Pipeline
+
+# Target DCC: Maya (2022+)
+
+# Purpose: Ignore caches, renders, temp files
+
+# ================================
+
+# --------------------------------
+
+# Maya autosave & backup
+
+# --------------------------------
+
+*.ma.autosave
+*.mb.autosave
+*.ma~
+*.mb~
+
+# --------------------------------
+
+# Maya temp / cache folders
+
+# --------------------------------
+
+autosave/
+cache/
+temp/
+tmp/
+mayaTemp/
+
+# --------------------------------
+
+# Simulation & geometry caches
+
+# --------------------------------
+
+*.abc
+*.mcx
+*.mc
+*.xml
+*.bgeo
+
+# --------------------------------
+
+# Render outputs (Film workflow)
+
+# --------------------------------
+
+renders/
+render/
+renderData/
+images/
+movies/
+playblast/
+preview/
+final/
+
+*.exr
+*.dpx
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.mov
+*.mp4
+
+# --------------------------------
+
+# Compositing outputs
+
+# --------------------------------
+
+06_Compositing/exports/
+
+# --------------------------------
+
+# GPU / viewport cache
+
+# --------------------------------
+
+*.gpuCache
+*.ogawa
+
+# --------------------------------
+
+# Logs & system junk
+
+# --------------------------------
+
+*.log
+*.swatches
+
+# --------------------------------
+
+# XGen (hair / fur)
+
+# --------------------------------
+
+*.xgen
+*.xgenindex
+*.xgen_collection
+
+# --------------------------------
+
+# OS specific
+
+# --------------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------------------------------
+
+# IDE / scripting (optional)
+
+# --------------------------------
+
+.vscode/
+.idea/
+**pycache**/
+*.pyc
+
+# --------------------------------
+
+# What we DO track (important)
+
+# --------------------------------
+
+!*.ma
+!*.mel
+!*.py
+!*.json
+!*.txt
+!README.md

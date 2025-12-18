@@ -1,0 +1,96 @@
+# ======================================
+
+# Film / 3D Animation DCC Pipeline
+
+# Target DCC: Maya (2022+)
+
+# Purpose: Line endings & binary handling
+
+# ======================================
+
+# --------------------------------------
+
+# Maya ASCII scenes (text-based)
+
+# --------------------------------------
+
+*.ma text eol=lf
+
+# --------------------------------------
+
+# Maya scripts
+
+# --------------------------------------
+
+*.mel text eol=lf
+*.py  text eol=lf
+
+# --------------------------------------
+
+# Config & data files
+
+# --------------------------------------
+
+*.json text eol=lf
+*.txt  text eol=lf
+*.md   text eol=lf
+
+# --------------------------------------
+
+# Binary DCC files (no diff, no merge)
+
+# --------------------------------------
+
+*.mb  binary
+*.fbx binary
+*.obj binary
+*.abc binary
+*.usd binary
+*.usda binary
+*.usdc binary
+
+# --------------------------------------
+
+# Textures & images (binary)
+
+# --------------------------------------
+
+*.exr  binary
+*.dpx  binary
+*.tif  binary
+*.tiff binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+
+# --------------------------------------
+
+# Video files (binary)
+
+# --------------------------------------
+
+*.mov binary
+*.mp4 binary
+
+# --------------------------------------
+
+# Cache & simulation files (binary)
+
+# --------------------------------------
+
+*.mc   binary
+*.mcx  binary
+*.bgeo binary
+*.vdb  binary
+
+# --------------------------------------
+
+# What this file ensures
+
+# --------------------------------------
+
+# - Stable line endings across OS
+
+# - Clean Git diffs for .ma / scripts
+
+# - No useless diff attempts on binaries
